@@ -5,15 +5,15 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<NextThemesProvider
-			attribute="data-theme"
+			attribute="data-user"
 			defaultTheme="neutral"
 			value={{
-				neutral: "neutral",
+				guest: "guest",
 				root: "root",
 				reggie: "reggie",
 				goldie: "goldie",
 				foxeye: "foxeye",
-				atom: "atom"
+				chazikov: "chazikov"
 			}}
 		>
 			{children}

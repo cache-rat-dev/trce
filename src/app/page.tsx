@@ -1,22 +1,33 @@
-import ThemeSwitcher from "@/components/ui/themeSwitcher";
+"use client";
+
+import { useEffect, useState } from "react";
+
+import { useTheme } from "next-themes";
 
 export default function Home() {
+	const { resolvedTheme: resolvedUser } = useTheme();
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	if (!mounted) {
+		return (
+			<div className="flex items-center justify-center">
+				<p className="text-2xl">LOADING THEME</p>
+			</div>
+		);
+	}
+
+	console.log(resolvedUser);
+
 	return (
-		<div className="bg-background h-dvh sm:p-5">
-			<div className="gridBg relative flex h-full w-full flex-1 flex-col items-center justify-center">
-				<ThemeSwitcher className="absolute top-5 w-full max-w-xs" />
-				<h1 className="text-accent">Missing File</h1>
-				<h3>Check back later.</h3>
-				<p className="bg-background border-text absolute bottom-5 w-fit border-3 px-3 text-center">
-					&copy; 2026{" "}
-					<a href="https://rackodo.dev" target="_blank">
-						Rackodo
-					</a>{" "}
-					a.k.a.{" "}
-					<a href="https://tumblr.com/blog/nukodi" target="_blank">
-						Nukodi
-					</a>
-					. All Rights Reserved.{" "}
+		<div className="flex justify-center">
+			<div className="flex flex-col items-center">
+				<h1 className="text-accent">[{resolvedUser}@ares:/ERROR]</h1>
+				<p className="text-2xl font-medium">
+					Incomplete file data. Please try again later.
 				</p>
 			</div>
 		</div>
