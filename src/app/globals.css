@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+	--color-background: var(--background);
+	--color-accent: var(--accent);
+	--color-text: var(--text);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	--font-sans: var(--font-rajdhani);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: "Rajdhani";
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Rajdhani";
+	font-weight: 700;
+}
+
+html {
+	font-size: 100%;
+} /* 16px */
+
+h1 {
+	font-size: 2.442rem; /* 39.04px */
+}
+
+h2 {
+	font-size: 1.954rem; /* 31.2px */
+}
+
+h3 {
+	font-size: 1.563rem; /* 24.96px */
+}
+
+h4 {
+	font-size: 1.25rem; /* 20px */
+}
+
+h5 {
+	font-size: 1rem; /* 16px */
+}
+
+small {
+	font-size: 0.64rem; /* 10.24px */
+}
+
+[data-theme="neutral"] {
+	--background: hsl(0, 0, 5);
+	--text: hsl(0, 0, 80);
+	--accent: hsl(0, 0, 50);
+}
+
+[data-theme="reggie"] {
+	--background: hsl(30, 100, 5);
+	--text: hsl(30, 100, 80);
+	--accent: hsl(30, 100, 50);
 }
