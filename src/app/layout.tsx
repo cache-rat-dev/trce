@@ -11,13 +11,14 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "TRACEBACK",
 		description: "You're not supposed to be here, are you?",
-		images: "https://trce.rackodo.dev/trce_favicon.png"
-	},
-	twitter: {
-		title: "TRACEBACK",
-		description: "You're not supposed to be here, are you?",
-		images: "https://trce.rackodo.dev/trce_favicon.png",
-		card: "summary"
+		images: [
+			{
+				url: "https://trce.rackodo.dev/trce_favicon.png",
+				width: 80,
+				height: 80,
+				alt: "TRACEBACK Logo"
+			}
+		]
 	},
 	other: { "theme-color": "#004A80" }
 };
