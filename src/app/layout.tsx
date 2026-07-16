@@ -1,9 +1,9 @@
-import ThemeProvider from "@/app/theme-provider";
+import { fonts } from "@/components/fonts";
+import ThemeProvider from "@/components/logic/themeProvider";
 
-import { fonts } from "./fonts";
 import type { Metadata } from "next";
 
-import "./globals.css";
+import "@/globals.css";
 
 export const metadata: Metadata = {
 	title: "TRACEBACK",
