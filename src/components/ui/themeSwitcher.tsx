@@ -25,14 +25,14 @@ const ThemeSwitcher = ({ className }: { className?: string }) => {
 					onChange={(e) => setTheme(e.target.value)}
 					className="bg-text text-background col-start-1 row-start-1 block h-full w-full cursor-pointer appearance-none rounded-none border-none pr-8 pl-2 font-bold"
 				>
-					<option value="neutral">Neutral</option>
+					<option value="guest">Guest</option>
 					<hr />
 					<option value="root">Root</option>
 					<option value="reggie">Reggie</option>
 					<option value="goldie">Goldie</option>
 					<option value="foxeye">Foxeye</option>
 					<hr />
-					<option value="atom">Atom</option>
+					<option value="chazikov">Atom</option>
 				</select>
 
 				<svg
