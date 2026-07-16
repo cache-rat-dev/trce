@@ -18,7 +18,9 @@ export const metadata: Metadata = {
 				height: 80,
 				alt: "TRACEBACK Logo"
 			}
-		]
+		],
+		url: "https://trce.rackodo.dev",
+		siteName: "TRACEBACK"
 	},
 	other: { "theme-color": "#004A80" }
 };
