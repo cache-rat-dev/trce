@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 		url: "https://trce.rackodo.dev",
 		siteName: "TRACEBACK"
 	},
+	twitter: { card: "summary" },
 	other: { "theme-color": "#004A80" }
 };
 
