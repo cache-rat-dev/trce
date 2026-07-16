@@ -7,7 +7,14 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 		<NextThemesProvider
 			attribute="data-theme"
 			defaultTheme="neutral"
-			value={{ neutral: "neutral", reggie: "reggie" }}
+			value={{
+				neutral: "neutral",
+				root: "root",
+				reggie: "reggie",
+				goldie: "goldie",
+				foxeye: "foxeye",
+				atom: "atom"
+			}}
 		>
 			{children}
 		</NextThemesProvider>
