@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 
+import { Metadata } from "next";
+
 const sounds = [
 	"/typeSounds/blip_0.wav",
 	"/typeSounds/blip_1.wav",
@@ -17,6 +19,27 @@ const sounds = [
 
 const SAMPLE_TEXT = "The quick brown fox jumps over the lazy dog.";
 const TYPING_SPEED_MS = 100; // Time delay between each letter
+
+export const metadata: Metadata = {
+	title: "Sound Test - TRACEBACK",
+	description: "Testing playing sounds when typing.",
+	openGraph: {
+		title: "Sound Test",
+		description: "Testing playing sounds when typing.",
+		images: [
+			{
+				url: "https://trce.rackodo.dev/trce_favicon.png",
+				width: 80,
+				height: 80,
+				alt: "TRACEBACK Logo"
+			}
+		],
+		url: "https://trce.rackodo.dev/sound_test",
+		siteName: "TRACEBACK"
+	},
+	twitter: { card: "summary" },
+	other: { "theme-color": "#004A80" }
+};
 
 export default function SoundTest() {
 	const [text, setText] = useState("");
