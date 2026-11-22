@@ -65,8 +65,8 @@ export default function RootLayout({
 									Rackodo
 								</a>{" "}
 								a.k.a.{" "}
-								<a href="https://tumblr.com/blog/nukodi" target="_blank">
-									Nukodi
+								<a href="https://cacherat.dev" target="_blank">
+									Cache Rat
 								</a>
 								. <br />
 								All Rights Reserved.
